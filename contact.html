@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - PT. Masafante Indo Walet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="auth-links">
+                    <a href="login.html">Masuk</a>
+                    <a href="register.html">Daftar</a>
+                </div>
+            </div>
+            
+            <div class="header-main">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://image.masindo.biz/s3/webp/co42796/companylogo/w400-h220/masafante-masindo-walet.png" alt="PT. Masafante Indo Walet">
+                    </a>
+                </div>
+                
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li class="dropdown">
+                            <a href="product.html">Katalog Produk</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product.html#sarang-walet-barang-bawah">Sarang Walet Barang Bawah</a></li>
+                                <li><a href="product.html#sarang-walet-mangkok">Sarang Walet Mangkok</a></li>
+                                <li><a href="product.html#sarang-walet-mentah">Sarang Walet Mentah</a></li>
+                                <li><a href="product.html#sarang-walet-oval">Sarang Walet Oval</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html" class="active">Kontak</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-right">
+                    <div class="language-toggle">
+                        <a href="#" class="lang-active">
+                            <img src="https://www.masindo.biz/images/flag-id.png" alt="Indonesia">
+                            Indonesia
+                        </a>
+                        <a href="#">
+                            <img src="https://www.masindo.biz/images/flag-uk.png" alt="English">
+                            English
+                        </a>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                        <button type="submit">Cari</button>
+                    </div>
+                </div>
+                
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontak Kami</h1>
+            <p>Hubungi kami untuk informasi produk dan kerjasama bisnis</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    
+                    <div class="contact-item">
+                        <h3>PT. Masafante Indo Walet</h3>
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <h4>Alamat</h4>
+                                <p>Sampoerna Strategic Square SouthTower, Mezzanine Level<br>
+                                Jenderal Sudirman Street, Kav 45-46<br>
+                                Jakarta 12930, Indonesia<br>
+                                Jakarta Selatan 12930<br>
+                                DKI Jakarta, Indonesia</p>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <h4>Hubungi dengan Telepon</h4>
+                                <p><a href="tel:+6281380356909">+62 813 8035 6909</a></p>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <h4>Hubungi dengan Email</h4>
+                                <p><a href="mailto:info@masindo.biz">info@masindo.biz</a></p>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <h4>Hubungi dengan WhatsApp</h4>
+                                <p><a href="https://wa.me/6281380356909" target="_blank">+62 813 8035 6909</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Kontak Sales</h3>
+                        <div class="sales-contacts">
+                            <div class="sales-item">
+                                <h4>No. Whatsapp Sales 1</h4>
+                                <p><a href="https://wa.me/6281380356909" target="_blank">+62 813 8035 6909</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Jam Operasional</h3>
+                        <div class="operating-hours">
+                            <p><strong>Senin - Jumat:</strong> 08:00 - 17:00 WIB</p>
+                            <p><strong>Sabtu:</strong> 08:00 - 12:00 WIB</p>
+                            <p><strong>Minggu:</strong> Tutup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Kirim Pesan</h2>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nama">Nama Lengkap *</label>
+                                <input type="text" id="nama" name="nama" required>
+                                <span class="error-message">Nama harus diisi</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message">Email harus diisi</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">No. Handphone *</label>
+                                <div class="phone-input">
+                                    <select name="country-code">
+                                        <option value="+62">+62</option>
+                                        <option value="+65">+65</option>
+                                        <option value="+852">+852</option>
+                                        <option value="+86">+86</option>
+                                    </select>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <span class="error-message">Nomor Telpon harus diisi</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="negara">Negara *</label>
+                                <select id="negara" name="negara" required>
+                                    <option value="">Pilih Negara</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Hong Kong">Hong Kong</option>
+                                    <option value="China">China</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Other">Lainnya</option>
+                                </select>
+                                <span class="error-message">Negara harus diisi</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="perusahaan">Nama Perusahaan *</label>
+                                <input type="text" id="perusahaan" name="perusahaan" required>
+                                <span class="error-message">Nama Perusahaan harus diisi</span>
+                                <small>Jika tidak ada nama perusahaan, mohon ketik N/A</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="jabatan">Jabatan *</label>
+                                <select id="jabatan" name="jabatan" required>
+                                    <option value="">Pilih Departemen</option>
+                                    <option value="Director / CEO">Director / CEO</option>
+                                    <option value="Sales Manager">Sales Manager</option>
+                                    <option value="Purchasing">Purchasing</option>
+                                    <option value="Technical">Technical</option>
+                                    <option value="Administrative">Administrative</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
+                                <span class="error-message">Jabatan harus diisi</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subjek pesan Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                            <span class="error-message">Pesan harus diisi</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="produk-interest">Produk yang Diminati</label>
+                            <select id="produk-interest" name="produk-interest">
+                                <option value="">Pilih Produk</option>
+                                <option value="Sarang Walet Mangkok">Sarang Walet Mangkok</option>
+                                <option value="Sarang Walet Oval">Sarang Walet Oval</option>
+                                <option value="Sarang Walet Mentah">Sarang Walet Mentah</option>
+                                <option value="Sarang Walet Barang Bawah">Sarang Walet Barang Bawah</option>
+                                <option value="Semua Produk">Semua Produk</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">Kirim Pesan</button>
+                            <button type="button" class="btn-whatsapp" id="whatsapp-contact">Chat via WhatsApp</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Lokasi Kami</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <h3>PT. Masafante Indo Walet</h3>
+                    <p>Sampoerna Strategic Square SouthTower<br>
+                    Jl. Jenderal Sudirman Kav 45-46<br>
+                    Jakarta Selatan 12930, Indonesia</p>
+                    <div class="map-coordinates">
+                        <p><strong>Koordinat:</strong> 6°10'42.9"S 106°47'21.0"E</p>
+                    </div>
+                    <a href="https://maps.google.com/?q=Sampoerna+Strategic+Square+Jakarta" target="_blank" class="btn-map">Lihat di Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PT. Masafante Indo Walet</h4>
+                    <p>PT Masafante Indowalet (Masafante) menghasilkan sarang 100% murni dan alami burung walet dari Indonesia, beroperasi di bawah lingkungan yang berkelanjutan untuk walet. Ini semua berawal dari keluarga H. M.</p>
+                    
+                    <div class="language-links">
+                        <a href="#"><img src="https://www.masindo.biz/images/flag-id.png" alt="Indonesia"> Indonesia</a> |
+                        <a href="#"><img src="https://www.masindo.biz/images/flag-uk.png" alt="English"> English</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="product.html">Katalog Produk</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Hubungi Kami</h4>
+                    <div class="contact-info">
+                        <h5>PT. Masafante Indo Walet</h5>
+                        <p>Sampoerna Strategic Square SouthTower, Mezzanine Level Jenderal Sudirman Street, Kav 45-46 Jakarta 12930. Indonesia, Jakarta Selatan 12930<br>
+                        DKI Jakarta , Indonesia</p>
+                        
+                        <div class="contact-methods">
+                            <p><strong>Hubungi dengan Telepon</strong></p>
+                            <p><a href="contact.html">Hubungi dengan Email</a></p>
+                            <p><strong>Hubungi dengan WhatsApp</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Lokasi</h4>
+                    <div class="map-placeholder">
+                        <p>Jakarta, Indonesia</p>
+                    </div>
+                    
+                    <h4>Share</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <a href="https://www.masindo.biz">www.masindo.biz</a> All Rights Reserved</p>
+                <p>&copy; 2025 - Powered by <a href="https://www.indotrading.com/masafanteindowalet">Indotrading.</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6281380356909" target="_blank">
+            <div class="whatsapp-icon">WA</div>
+        </a>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Additional contact form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            const whatsappBtn = document.getElementById('whatsapp-contact');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    let isValid = true;
+                    const formGroups = contactForm.querySelectorAll('.form-group');
+                    
+                    // Reset previous errors
+                    formGroups.forEach(group => {
+                        group.classList.remove('error');
+                    });
+                    
+                    // Get form values
+                    const nama = document.getElementById('nama').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const negara = document.getElementById('negara').value;
+                    const perusahaan = document.getElementById('perusahaan').value.trim();
+                    const jabatan = document.getElementById('jabatan').value;
+                    const subject = document.getElementById('subject').value.trim();
+                    const message = document.getElementById('message').value.trim();
+                    const produkInterest = document.getElementById('produk-interest').value;
+                    
+                    // Validation
+                    if (!nama) {
+                        showError(document.getElementById('nama'), 'Nama harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (!email) {
+                        showError(document.getElementById('email'), 'Email harus diisi');
+                        isValid = false;
+                    } else if (!isValidEmail(email)) {
+                        showError(document.getElementById('email'), 'Mohon isi email dengan benar');
+                        isValid = false;
+                    }
+                    
+                    if (!phone) {
+                        showError(document.getElementById('phone'), 'Nomor Telpon harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (!negara) {
+                        showError(document.getElementById('negara'), 'Negara harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (!perusahaan) {
+                        showError(document.getElementById('perusahaan'), 'Nama Perusahaan harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (!jabatan) {
+                        showError(document.getElementById('jabatan'), 'Jabatan harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (!message) {
+                        showError(document.getElementById('message'), 'Pesan harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (isValid) {
+                        // Create email message
+                        const emailSubject = subject || 'Inquiry dari Website';
+                        const emailBody = `
+Nama: ${nama}
+Email: ${email}
+No. HP: ${document.querySelector('select[name="country-code"]').value}${phone}
+Negara: ${negara}
+Perusahaan: ${perusahaan}
+Jabatan: ${jabatan}
+Produk yang Diminati: ${produkInterest || 'Tidak disebutkan'}
+
+Pesan:
+${message}
+                        `;
+                        
+                        // Create mailto link
+                        const mailtoLink = `mailto:info@masindo.biz?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+                        window.location.href = mailtoLink;
+                        
+                        // Show success message
+                        alert('Terima kasih! Email client Anda akan terbuka untuk mengirim pesan.');
+                        
+                        // Reset form
+                        contactForm.reset();
+                    }
+                });
+            }
+            
+            if (whatsappBtn) {
+                whatsappBtn.addEventListener('click', function() {
+                    const nama = document.getElementById('nama').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const perusahaan = document.getElementById('perusahaan').value.trim();
+                    const message = document.getElementById('message').value.trim();
+                    
+                    let whatsappMessage = 'Halo, saya ingin bertanya tentang produk sarang walet.';
+                    
+                    if (nama || email || phone || perusahaan || message) {
+                        whatsappMessage += '\n\nInformasi saya:';
+                        if (nama) whatsappMessage += `\nNama: ${nama}`;
+                        if (email) whatsappMessage += `\nEmail: ${email}`;
+                        if (phone) whatsappMessage += `\nNo. HP: ${phone}`;
+                        if (perusahaan) whatsappMessage += `\nPerusahaan: ${perusahaan}`;
+                        if (message) whatsappMessage += `\n\nPesan: ${message}`;
+                    }
+                    
+                    whatsappMessage += '\n\nTerima kasih.';
+                    
+                    const whatsappUrl = `https://wa.me/6281380356909?text=${encodeURIComponent(whatsappMessage)}`;
+                    window.open(whatsappUrl, '_blank');
+                });
+            }
+            
+            function showError(input, message) {
+                const formGroup = input.closest('.form-group');
+                if (formGroup) {
+                    formGroup.classList.add('error');
+                    const errorMessage = formGroup.querySelector('.error-message');
+                    if (errorMessage) {
+                        errorMessage.textContent = message;
+                    }
+                }
+            }
+            
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+        });
+    </script>
+</body>
+</html>

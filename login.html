@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk - PT. Masafante Indo Walet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="auth-links">
+                    <a href="login.html" class="active">Masuk</a>
+                    <a href="register.html">Daftar</a>
+                </div>
+            </div>
+            
+            <div class="header-main">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://image.masindo.biz/s3/webp/co42796/companylogo/w400-h220/masafante-masindo-walet.png" alt="PT. Masafante Indo Walet">
+                    </a>
+                </div>
+                
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li class="dropdown">
+                            <a href="product.html">Katalog Produk</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product.html#sarang-walet-barang-bawah">Sarang Walet Barang Bawah</a></li>
+                                <li><a href="product.html#sarang-walet-mangkok">Sarang Walet Mangkok</a></li>
+                                <li><a href="product.html#sarang-walet-mentah">Sarang Walet Mentah</a></li>
+                                <li><a href="product.html#sarang-walet-oval">Sarang Walet Oval</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-right">
+                    <div class="language-toggle">
+                        <a href="#" class="lang-active">
+                            <img src="https://www.masindo.biz/images/flag-id.png" alt="Indonesia">
+                            Indonesia
+                        </a>
+                        <a href="#">
+                            <img src="https://www.masindo.biz/images/flag-uk.png" alt="English">
+                            English
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h1>Masuk</h1>
+                    <p>Masuk ke akun Anda untuk mengakses layanan kami</p>
+                </div>
+
+                <div class="login-options">
+                    <div class="login-tabs">
+                        <button class="tab-btn active" data-tab="customer">Masuk sebagai Customer</button>
+                        <button class="tab-btn" data-tab="sales">Masuk sebagai Sales</button>
+                    </div>
+
+                    <!-- Customer Login -->
+                    <div class="tab-content active" id="customer-tab">
+                        <form id="customer-login-form" class="auth-form">
+                            <div class="form-group">
+                                <label for="customer-email">Email</label>
+                                <input type="email" id="customer-email" name="email" required>
+                                <span class="error-message">Email harus diisi</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customer-password">Password</label>
+                                <input type="password" id="customer-password" name="password" required>
+                                <span class="error-message">Password harus diisi</span>
+                            </div>
+
+                            <div class="form-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="remember">
+                                    <span class="checkmark"></span>
+                                    Ingat saya
+                                </label>
+                                <a href="#" class="forgot-password">Lupa password?</a>
+                            </div>
+
+                            <button type="submit" class="btn-login">Masuk sebagai Customer</button>
+                        </form>
+                    </div>
+
+                    <!-- Sales Login -->
+                    <div class="tab-content" id="sales-tab">
+                        <form id="sales-login-form" class="auth-form">
+                            <div class="form-group">
+                                <label for="sales-email">Email Sales</label>
+                                <input type="email" id="sales-email" name="email" required>
+                                <span class="error-message">Email harus diisi</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sales-password">Password</label>
+                                <input type="password" id="sales-password" name="password" required>
+                                <span class="error-message">Password harus diisi</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sales-id">ID Sales</label>
+                                <input type="text" id="sales-id" name="sales-id" required>
+                                <span class="error-message">ID Sales harus diisi</span>
+                            </div>
+
+                            <div class="form-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="remember">
+                                    <span class="checkmark"></span>
+                                    Ingat saya
+                                </label>
+                                <a href="#" class="forgot-password">Lupa password?</a>
+                            </div>
+
+                            <button type="submit" class="btn-login">Masuk sebagai Sales</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="auth-footer">
+                    <p>Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+                    <p><a href="index.html">Kembali ke Beranda</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PT. Masafante Indo Walet</h4>
+                    <p>PT Masafante Indowalet (Masafante) menghasilkan sarang 100% murni dan alami burung walet dari Indonesia, beroperasi di bawah lingkungan yang berkelanjutan untuk walet.</p>
+                    
+                    <div class="language-links">
+                        <a href="#"><img src="https://www.masindo.biz/images/flag-id.png" alt="Indonesia"> Indonesia</a> |
+                        <a href="#"><img src="https://www.masindo.biz/images/flag-uk.png" alt="English"> English</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="product.html">Katalog Produk</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Hubungi Kami</h4>
+                    <div class="contact-info">
+                        <h5>PT. Masafante Indo Walet</h5>
+                        <p>Sampoerna Strategic Square SouthTower, Mezzanine Level Jenderal Sudirman Street, Kav 45-46 Jakarta 12930. Indonesia</p>
+                        
+                        <div class="contact-methods">
+                            <p><strong>Hubungi dengan Telepon</strong></p>
+                            <p><a href="contact.html">Hubungi dengan Email</a></p>
+                            <p><strong>Hubungi dengan WhatsApp</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Lokasi</h4>
+                    <div class="map-placeholder">
+                        <p>Jakarta, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <a href="https://www.masindo.biz">www.masindo.biz</a> All Rights Reserved</p>
+                <p>&copy; 2025 - Powered by <a href="https://www.indotrading.com/masafanteindowalet">Indotrading.</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all tabs and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId + '-tab').classList.add('active');
+                });
+            });
+            
+            // Customer login form
+            const customerForm = document.getElementById('customer-login-form');
+            if (customerForm) {
+                customerForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = document.getElementById('customer-email').value.trim();
+                    const password = document.getElementById('customer-password').value.trim();
+                    
+                    // Reset errors
+                    document.querySelectorAll('.form-group').forEach(group => {
+                        group.classList.remove('error');
+                    });
+                    
+                    let isValid = true;
+                    
+                    if (!email) {
+                        showError(document.getElementById('customer-email'), 'Email harus diisi');
+                        isValid = false;
+                    } else if (!isValidEmail(email)) {
+                        showError(document.getElementById('customer-email'), 'Format email tidak valid');
+                        isValid = false;
+                    }
+                    
+                    if (!password) {
+                        showError(document.getElementById('customer-password'), 'Password harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (isValid) {
+                        // Simulate login process
+                        alert('Login berhasil! Anda akan diarahkan ke dashboard customer.');
+                        // In real application, you would send data to server
+                        // window.location.href = 'customer-dashboard.html';
+                    }
+                });
+            }
+            
+            // Sales login form
+            const salesForm = document.getElementById('sales-login-form');
+            if (salesForm) {
+                salesForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = document.getElementById('sales-email').value.trim();
+                    const password = document.getElementById('sales-password').value.trim();
+                    const salesId = document.getElementById('sales-id').value.trim();
+                    
+                    // Reset errors
+                    document.querySelectorAll('.form-group').forEach(group => {
+                        group.classList.remove('error');
+                    });
+                    
+                    let isValid = true;
+                    
+                    if (!email) {
+                        showError(document.getElementById('sales-email'), 'Email harus diisi');
+                        isValid = false;
+                    } else if (!isValidEmail(email)) {
+                        showError(document.getElementById('sales-email'), 'Format email tidak valid');
+                        isValid = false;
+                    }
+                    
+                    if (!password) {
+                        showError(document.getElementById('sales-password'), 'Password harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (!salesId) {
+                        showError(document.getElementById('sales-id'), 'ID Sales harus diisi');
+                        isValid = false;
+                    }
+                    
+                    if (isValid) {
+                        // Simulate login process
+                        alert('Login berhasil! Anda akan diarahkan ke dashboard sales.');
+                        // In real application, you would send data to server
+                        // window.location.href = 'sales-dashboard.html';
+                    }
+                });
+            }
+            
+            function showError(input, message) {
+                const formGroup = input.closest('.form-group');
+                if (formGroup) {
+                    formGroup.classList.add('error');
+                    const errorMessage = formGroup.querySelector('.error-message');
+                    if (errorMessage) {
+                        errorMessage.textContent = message;
+                    }
+                }
+            }
+            
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+        });
+    </script>
+</body>
+</html>
